@@ -5,9 +5,10 @@ public class Televisore extends Prodotto{
 	private int dimensioni;
 	private boolean smart;
 	
-	public Televisore(int codice, String nome, String marca, double prezzo, int iva, int dimensioni) {
+	public Televisore(int codice, String nome, String marca, double prezzo, int iva, int dimensioni, boolean smart) {
 		super(codice, nome, marca, prezzo, iva);
 		this.dimensioni = dimensioni;
+		this.smart = smart;
 	}
 
 	public int getDimensioni() {
@@ -28,8 +29,7 @@ public class Televisore extends Prodotto{
 
 	@Override
 	public String toString() {
-		// TODO Auto-generated method stub
-		return super.toString();
+		return super.toString() + "\nDimensioni: " + dimensioni;
 	}
 	
 	
