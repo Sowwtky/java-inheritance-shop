@@ -25,6 +25,12 @@ public class Televisore extends Prodotto{
 	public void setSmart(boolean smart) {
 		this.smart = smart;
 	}
+
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return super.toString();
+	}
 	
 	
 	
